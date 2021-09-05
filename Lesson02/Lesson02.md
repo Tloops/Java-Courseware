@@ -1,4 +1,4 @@
-# Lesson 2 第一个Java程序
+# Lesson 02 第一个Java程序
 
 从示例程序开始入门吧！这节课我会重点强调如何让你的Java代码跑起来，以及Java程序的基本结构。
 
@@ -101,9 +101,9 @@ public static void main(String[] args) {
 
 ​		我们都知道，早期的计算机是非常之大的，比如下面这台Harvard Mark II。这些大型的温暖的机器也会吸引昆虫。1947年9月，操作员就从这台大型计算机故障的继电器中，拔出来一只死虫。从这以后开始，当我们发现计算机出了故障或程序没有得到预期的输出结果，我们就说这电脑或程序有了**bug**。
 
-![bug1](.\bug1.png)
+![bug1](./bug1.png)
 
-![bug2](.\bug2.png)
+![bug2](./bug2.png)
 
 （引自[Crash Course Computer Science](https://www.bilibili.com/video/BV1EW411u7th?p=2) 03:19 ~ 03:34）
 
