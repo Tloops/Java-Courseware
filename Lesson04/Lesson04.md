@@ -68,22 +68,51 @@ import java.util.Scanner;
 
 
 
+我们来看这个例子，`Addition1.java`想要将运行时输入的两个数进行相加并输出结果。
+
+```java
+import java.util.Scanner;
+
+public class Addition1 {
+    public static void main(String[] args) {
+        
+        // create a Scanner called sc
+        Scanner sc = new Scanner(System.in);
+        
+        // get the two integers by the Scanner--"sc"
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        
+        // add them together
+        int c = a + b;
+        
+        // show the result
+        System.out.println(c);
+        
+        // usually we close it after all input operations
+        sc.close();
+    }
+}
+```
+
+
+
 ### argument
 
-除了能在程序运行时获取用户自定义的输入，我们还可以在运行前指定要输入的参数。比如`Addition.java`想要将运行前设置的入参的两个数进行相加并输出结果。
+除了能在程序运行时获取用户自定义的输入，我们还可以在运行前指定要输入的参数。比如`Addition2.java`想要将运行前设置的入参的两个数进行相加并输出结果。
 
 可是如何指定好要输入的参数呢？我们一般运行Java程序是这样在命令行中输入指令的：
 
 ```bash
-javac Addition.java # compile to .class
+javac Addition2.java # compile to .class
 
-java Addition    	# run the .class file
+java Addition2    	# run the .class file
 ```
 
 想要指定需要运行的参数，只需要在第二句话中之后加上要输入的参数就好了：
 
 ```bash
-java Addition 1 2   # run with two parameter 1 and 2
+java Addition2 1 2   # run with two parameter 1 and 2
 ```
 
 上面的命令行指令就表示指定1和2作为Addition程序的入参，这个入参是可以有无限个的哟~
@@ -123,7 +152,7 @@ System.out.println(s1+s2);
 剩下的任务就是相加再打印输出结果咯，我们直接来看示例代码吧：
 
 ```java
-public class Addition {
+public class Addition2 {
     public static void main(String[] args) {
         
         // get the arguments and turn them into the correct data type
@@ -134,8 +163,12 @@ public class Addition {
         int c = a + b;
         
         // show the result
-        System.out.println(c)
+        System.out.println(c);
     }
 }
 ```
+
+
+
+那么以上就是常用的输入的两种方式了，希望各位多加练习哦~
 
