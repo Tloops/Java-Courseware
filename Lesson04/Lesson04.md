@@ -115,7 +115,7 @@ java Addition2    	# run the .class file
 java Addition2 1 2   # run with two parameter 1 and 2
 ```
 
-上面的命令行指令就表示指定1和2作为Addition程序的入参，这个入参是可以有无限个的哟~
+上面的命令行指令就表示指定1和2作为Addition程序的入参，这个入参是可以有无限个的哟~记得用空格隔开每一个参数！
 
 
 
@@ -149,7 +149,7 @@ System.out.println(s1+s2);
 
 
 
-剩下的任务就是相加再打印输出结果咯，我们直接来看示例代码吧：
+剩下的任务就是**相加再打印输出结果**咯，我们直接来看示例代码吧：
 
 ```java
 public class Addition2 {
@@ -170,5 +170,110 @@ public class Addition2 {
 
 
 
-那么以上就是常用的输入的两种方式了，希望各位多加练习哦~
+那么以上就是常用的输入的两种方式了，其中**Scanner是更常用的**，希望各位多加练习哦~
+
+
+
+## 2 输出
+
+### System.out.println()
+
+相信大家肯定已经对第一种输出方式并不陌生了：
+
+```java
+System.out.println("Nice to meet you!");
+System.out.println(c);
+```
+
+在这个括号我们可以写变量的名字，这可以打印出这个变量内部存储的值，也可以直接写直接量，这会直接打印出这个直接量。另外，我们要注意这里print之后的`ln`，这个可以理解为就是`line`，也就是**行**的意思，表示打印完后会换行，下次打印会从下一行开始打印。
+
+另外为了方便的打印一些解释，我们可以利用上一个part说到过的**加号**，当字符串和变量相加时，也会变成一个拼接的操作，把对应变量的值拼接到相应字符串之前或之后：
+
+```java
+System.out.println("Calculate " + a + "+" + b)
+System.out.println("The result is " + c);
+```
+
+当a的值为1，b的值为2，c的值为3时，输出为：
+
+```
+Calculate 1+2
+The result is 3
+
+```
+
+
+
+### System.out.print()
+
+这个方法和`println`的区别就是少了一个`ln`，所以显然这个就是打印括号内的内容之后不会换行~其他用法都大致相似。
+
+
+
+### System.out.printf()
+
+这个方法仔细讲起来可以用很大篇幅去描述，但我在这里仅会讲一些基本的用法，各种花里胡哨的操作大家可以靠百度学习。
+
+首先大家肯定会好奇这里的`f`是什么，这个`f`代表的单词是`format`，格式。这个方法的中文翻译（非官方）就是——格式化输出。
+
+那接下来让我们看看他怎么个格式化法，我们先看看这个语句：
+
+```java
+int hour = 5;
+int grade = 3;
+System.out.printf("I slept %d hours a day on average when I was a Grade %d student in SUSTech.", hour, grade);
+```
+
+输出：
+
+```
+I slept 5 hours a day on average when I was a Grade 3 student in SUSTech.
+```
+
+在上面的字符串直接量中的`%d`叫做**格式符**，它们可以被替换为特定的**整型**变量值。字符串中出现的`%d`会依次被替换为这个字符串之后的变量，比如第一个`%d hours`的`%d`就会被字符串后的第一个变量`hour`代替，第二个`%d student`的`%d`则会被第二个变量`grade`代替。如果是其他类型的变量，则需要其他的格式符：
+
+- float, double: %f
+
+- char: %c
+- byte, short, int, long: %d
+- String: %s
+
+你会发现这用上面的+操作符也行啊，确实是这样，在这种时候，你可以按照自己的喜好去使用任意的方法，但是切记**你都得会**，不然考试你会GG。
+
+不过这东东的功能可不止于此：
+
+1. **四舍五入**，用于浮点数float和double，`.nf`，n为多少就保留几位小数：
+
+   ```java
+   double PI = 3.14159;
+   System.out.printf("%.2f", PI)
+   ```
+
+   输出：
+
+   ```
+   3.14
+   ```
+
+2. **填充空格**，适合制表：
+
+   ```java
+   double PI = 3.14159;
+   int date = 14;
+   System.out.printf("%6.2f%4d", PI, date)
+   ```
+
+   输出：
+
+   ```
+     3.14  14
+   ```
+
+   这里PI先按照`.2f`的要求保留两位小数，即3.14；然后6表示占六个格子，可是3.14只占4格啊，这个时候会在3.14的左边补两个空格就变成了两个空格之后3.14。后面的`date`同理。至于制表的用法，等大家做了乘法表的那个题我们再提吧。
+
+
+
+## 3 转义字符
+
+当我正准备快快乐乐结束这一个lesson的时候，我突然想起来，转义字符还没讲，我裂开来。明天再写
 
