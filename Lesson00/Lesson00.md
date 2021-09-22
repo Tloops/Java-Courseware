@@ -13,7 +13,7 @@
 ## Some tips
 
 - **多尝试**，少纸上谈兵
-  - “计算机是一名**‘做中学’**的学科，不是会了再做，而是**做了才会**”
+  - “计算机是一名**做中学**的学科，不是会了再做，而是**做了才会**”
 - 杜绝一直死记硬背，**摸到套路**才是重中之重
   - 开始的时候确实得死记下来一些语句、用法
   - 继续摸清楚各种用法的相同之处，提炼一些常用“定式”
@@ -52,7 +52,7 @@
 
 ### 官方下载地址：
 
-- Intellij IDEA：https://www.jetbrains.com/idea/download/，在这个页面选择对应的操作系统和想要下载的版本就好了
+- Intellij IDEA：在后面这个页面选择对应的操作系统和想要下载的版本就好了，https://www.jetbrains.com/idea/download/
 
 - jdk8（Windows）：https://www.oracle.com/cn/java/technologies/javase/javase-jdk8-downloads.html#license-lightbox
 - jdk8（MacOS）：https://www.oracle.com/cn/java/technologies/javase/javase-jdk8-downloads.html#license-lightbox
