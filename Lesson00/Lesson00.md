@@ -57,5 +57,5 @@
 - jdk8（Windows）：https://www.oracle.com/cn/java/technologies/javase/javase-jdk8-downloads.html#license-lightbox
 - jdk8（MacOS）：https://www.oracle.com/cn/java/technologies/javase/javase-jdk8-downloads.html#license-lightbox
 
-ps：上述链接本人均未没有测试是否有效，若有误请帮忙指正，谢谢！
+ps：上述链接本人均未测试是否有效，若有误请帮忙指正，谢谢！
 
