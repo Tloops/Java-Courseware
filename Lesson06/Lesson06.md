@@ -117,6 +117,53 @@ else {
 
 
 
+### switch
+
+switch语句可以**根据变量的值来选择下一步执行哪一句代码**。
+
+下面的代码想要根据month的值，来输出相应月份对应的季节：
+
+```java
+switch(month){
+    case 3:
+    case 4:
+    case 5: System.out.println("Spring"); break;
+    case 6:
+    case 7:
+    case 8: System.out.println("Summer"); break;
+    case 9:
+    case 10:
+    case 11: System.out.println("Autumn"); break;
+    case 12:
+    case 1:
+    case 2: System.out.println("Winter"); break;
+    default: System.out.println("Invalid month!"); // run default branch if there's no same value of month
+}
+```
+
+当程序执行到这里时，`switch`会根据其后小括号中变量`month`的值，选择应该从哪里执行，而`break;`语句，会结束`switch`块，直接去执行这之后的代码。我写到这里的时候正好是十一假期，那我们就假设`month`的值为10。那么程序在经过第一行的判断后，就会找`case 10`的那一行，也就是第9行。但是第九行没有语句，也没有`break;`，所以程序会继续向下执行第十行的语句，打印出`Autumn`字样，然后出现了`break;`，于是直接结束了`switch`块。更细节地，`month`为3、4、5时会输出`Spring`；`month`为6、7、8时会输出`Summer`；`month`为9、10、11时会输出`Autumn`；`month`为12、1、2时会输出`Winter`；若都不是，则输出`Invalid month!`。
+
+#### 注意事项：
+
+1. 括号内的变量值只可以是**char、byte、short、int或者String**型值
+2. case后的值必须与括号中的变量的类型相同
+3. default语句块和break语句都是可加可不加的，重点在于你的逻辑
+
+
+
+### condition expression
+
+**条件表达式**（condition expression）像是一种简化版的`if-else`语句块，我们先来看看它的形式：
+
+```java
+// condition ? expression1 : expression2
+max = (num1 > num2) ? num1 : num2;
+```
+
+其中的`(num1 > num2) ? num1 : num2`就是一个条件表达式，若`condition`为真，则结果为`expression1`；否则为`expression2`。在这个具体的例子中，当`num1`大于`num2`时，表达式结果为`num1`，赋值给变量`max`的值就是`num1`的值；否则就是`num2`。
+
+
+
 ### 最后要说的
 
 逻辑能力不仅仅是与生俱来的，也可以是后天的努力习得的。
@@ -127,5 +174,5 @@ else {
 
 
 
-## 变量的作用域
+## 2 变量的作用域
 
