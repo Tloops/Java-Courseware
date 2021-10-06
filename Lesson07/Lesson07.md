@@ -22,6 +22,22 @@ B：“所以你才是猪”
 
 ## 1 循环
 
+### while
+
+![while](./while.png)
+
+
+
+### do-while
+
+![dowhile](./dowhile.png)
+
+
+
+### for
+
+![for](./for.png)
+
 
 
 ### 练习
