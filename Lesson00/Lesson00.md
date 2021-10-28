@@ -53,9 +53,7 @@
 ### 官方下载地址：
 
 - Intellij IDEA：在后面这个页面选择对应的操作系统和想要下载的版本就好了，https://www.jetbrains.com/idea/download/
-
-- jdk8（Windows）：https://www.oracle.com/cn/java/technologies/javase/javase-jdk8-downloads.html#license-lightbox
-- jdk8（MacOS）：https://www.oracle.com/cn/java/technologies/javase/javase-jdk8-downloads.html#license-lightbox
+- jdk8：[Java Archive Downloads - Java SE 8 (oracle.com)](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html) 请在这个页面寻找，需要注册一个oracle账户才行哦
 
 ps：上述链接本人均未测试是否有效，若有误请帮忙指正，谢谢！
 
