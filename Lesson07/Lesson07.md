@@ -124,7 +124,7 @@ do {
 
 ![dowhile](./dowhile.png)
 
-通过对比**while循环**和**do-while循环**的流程图，我们可以发现二者的区别：**while**是先判断再执行循环体；而**do-while**是先执行循环体再判断的。也就是说，**do-while循环**的循环体**无论如何一定会执行一遍**。
+通过对比**while循环**和**do-while循环**的流程图，我们可以发现二者的区别：**while**是先判断再执行循环体；而**do-while**是先执行循环体再判断的。也就是说，**do-while循环**的循环体**无论如何一定会执行一遍**。另外要注意**do-while**的最后是要打分号的哦！
 
 
 
@@ -145,6 +145,8 @@ for(expression1; expression2; expression3) {
 - `statements`：循环体，当`expression2`成立时则会执行
 
 ![for](./for.png)
+
+> 思考一下：水仙花数的示例代码的**while**循环该如何改为**for**循环呢？
 
 
 
@@ -177,4 +179,32 @@ for(expression1; expression2; expression3) {
 
 
 ## 2 变量的作用域
+
+变量的作用域，指的是**变量可以被使用的范围**。
+
+不难知道，一个变量首先需要被声明才可以被使用，在其被声明前是无法被使用的。
+
+```java
+i = 1; // compile error, because here we can't find i
+int i = 999; // declare i
+i = 1; // successfully find i
+```
+
+学过了判断和循环后，我们使用代码块的频率越来越频繁了。代码块就是用**大括号**包起来的一部分代码。我们要注意，在某一块代码块内声明的变量，仅在当前代码块内有效，在代码块执行结束后，这个变量的空间就会被释放，在代码块外是不能引用到这个变量的。循环中声明的变量，也只在当前迭代有效。
+
+```java
+i = 1; // compile error, because here we can't find i
+j = 1; // compile error, because here we can't find j
+
+if (true) {
+	int j = 0;
+}
+
+for(int i = 0; i < 10; i++) {
+	System.out.println(i); // successfully find i
+}
+
+i = 1; // compile error, because here we can't find i
+j = 1; // compile error, because here we can't find j
+```
 
