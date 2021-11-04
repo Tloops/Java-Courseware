@@ -121,5 +121,70 @@ public static void makeMove(){
 
 
 
-## 6 方法重载
+## 6 方法重载（Method Overloading）
 
+**方法重载**是指两个方法可以使用相同的名字，不同的参数列表。
+
+参数列表不同涉及到两点：
+
+- 参数个数不同
+- 参数的类型不同
+
+方法重载主要用于命名一系列功能相似的方法。
+
+比如以下的两个方法，都是求最大值，一个是求两个数的最大值，一个是求三个数的最大值：
+
+```java
+public static int max(int x, int y) {
+    System.out.println("Method 1 invoked");
+    if(x > y)	return x;
+    else		return y;
+}
+
+public static int max(int x, int y, int z) {
+    System.out.println("Method 2 invoked");
+    int max = x;
+    if(y > max)	max = y;
+    if(z > max)	max = z;
+    return max;
+}
+```
+
+在我们调用它们时：
+
+```java
+int i = 5, j = 2;
+int k = max(i,j);
+System.out.println(k);
+System.out.println(max(7888, 900, 232));
+```
+
+输出为：
+
+```
+Method 1 invoked
+5
+Method 2 invoked
+7888
+```
+
+由此可见，调用哪个方法取决于**方法名以及方法的参数列表**。
+
+
+
+### 注意：
+
+1. 两个方法的返回值不同，其他相同，并不能构成方法重载
+2. 两个方法的参数变量名不同，其他相同，并不能构成方法重载
+
+
+
+## 7 可变长参数列表
+
+
+
+
+
+## 8 方法调用栈\*
+
+因为涉及到课外（计算机组成原理以及数据结构）的知识，在这里我们就不细讲啦，所以大家有兴趣可以自己了解一下哈。
