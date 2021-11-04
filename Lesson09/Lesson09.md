@@ -181,10 +181,40 @@ Method 2 invoked
 
 ## 7 可变长参数列表
 
+可以将具有同样类型的可变长度的参数传递给方法。参数声明为`typename... parameterName`。在方法中，可变长的参数将会被当成数组对待。
 
+比如下面的代码，就是取可变长参数中的最大值：
+
+```java
+public static double max(double... nums) {
+    System.out.println("Method 3 invoked");
+    double maxValue = Double.MIN_VALUE;
+    for(int i = 0; i < nums.length; i++)
+        if(maxValue < nums[i])
+            maxValue = nums[i];
+    return maxValue;
+}
+```
+
+### 注意事项
+
+1. 方法中只能指定一个可变长参数
+2. 可变长参数必须是参数列表中的最后一个参数
+
+### 更典型的例子
+
+`System.out.printf`方法！
 
 
 
 ## 8 方法调用栈\*
 
 因为涉及到课外（计算机组成原理以及数据结构）的知识，在这里我们就不细讲啦，所以大家有兴趣可以自己了解一下哈。
+
+
+
+## 写在后面的话
+
+恭喜各位！学到这里，你们的编程就入门啦！你们到目前为止学习的（变量、判断、循环、数组、方法）是学习每门编程语言都会学到的内容。
+
+接下来，就让我们走上Java所特有的**面向对象**编程思想的困难旅程吧！向着星尘与深渊！
