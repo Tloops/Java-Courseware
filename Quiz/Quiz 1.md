@@ -10,7 +10,7 @@ Produced by Tloops						Total Score: 30
 4. An array can store many **different** types of values
 5. **Instance methods** in a class can also be overloaded
 
-## Part 2 - Multiple Choices & Write Outputs(2 points each)
+## Part 2 - Short Answer Questions(2 points each)
 
 1. Write the **output** of the following program:
 
@@ -53,20 +53,18 @@ Produced by Tloops						Total Score: 30
 
    A. Compile error	B. Runtime Error	C. print: **:-) Hi 2019**	D. print: **Hi 2019**
 
-5. Write is the **output** of the following program:
+5. Write the **output** of the following program:
 
    ```java
    public class Main {
        public static void main(String[] args){
-           int[] a = {1, 2, 3};	int[] b = {9, 8, 7};
+           int[] a = {1, 2, 3}; int[] b = {9, 8, 7};
            swap(a, b);
            System.out.print(a[0] + " " + b[0]);
        }
        public static void swap(int[] a, int[] b){
            a[0]++;
-           int[] temp = a;
-           a = b;
-           b = temp;
+           int[] temp = a; a = b; b = temp;
            b[0]++;
        }
    }
@@ -75,29 +73,33 @@ Produced by Tloops						Total Score: 30
 
 ## Part 3 - Programming (5 points each)
 
-1. Alice is always worried about their weight as many girls do. She wants to calculate her BMI to check if she is overweight and she asks you for help. Please implement the method below which gets two argument: **weight**(double) and **height**(double), and print if she is **thin**, **normal** or **overweight**. The way to calculate **BMI** is given below: 
+1. Snow is always worried about her weight as many girls do. She wants to calculate her BMI to check if she is overweight and she asks you for help. Please implement a method which gets two parameters: **weight**(double) and **height**(double), and prints **thin**, **normal** or **overweight** according to the BMI calculated by the two parameters. The way to calculate **BMI** is given below: 
    $$
    BMI = \frac{weight}{height×height}
    $$
    **Range --> State**: (0, 18.5) --> **thin**	[18.5, 22.9] --> **normal**	(22.9, infinity) --> **overweight**
    
    ```java
-   public static void BMICalculator(double weight, double height){
-       //implement your code here
-       //Hint: 1. calculate BMI firstly using the formula
-       //		2. use if-else to decide what to print
+   public static void BMICalculator(double weight, double height) {
+       
+       
+       
+       
    }
    ```
    
-2. Implement a method which returns the factorial(阶乘) of a input integer n:
+2. Implement a method which returns the factorial(阶乘) of a input integer `n`:
 
    ```java
-   public static int factorial(int n){
-       //implement your code here
+   public static int factorial(int n) {
+       
+       
+       
+       
    }
    ```
 
-## Part 4 - Additional Question (0 points)
+## Part 4 - Additional Question (0 point)
 
 Please write something you want to say to me! 
 
