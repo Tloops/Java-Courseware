@@ -4,7 +4,7 @@ Produced by Tloops						Total Score: 30
 
 ## Part 1 - True or False(2 points each)
 
-1. Java programs are executed by something called **IDE**
+1. Java programs are executed by something called **JVM**
 2. The loop body of **for** loop is executed at least once as it tests the loop-continuation condition after the the loop every time
 3. Java allows several methods of the same name to be declared in a class, as long as the methods have different sets of parameters
 4. An array can store many **different** types of values
@@ -22,9 +22,9 @@ Produced by Tloops						Total Score: 30
    }
    ```
    
-2. Which of the following is a **valid** name of a variable in Java?
+2. What are the 8 primitive types in Java? Please write them down.
 
-   A. new			B. 123_abc			C. Secret Base			D. $999
+   
 
 3. What will be the value of **num** after executing the following statements?
 
