@@ -26,7 +26,30 @@ SUSTech 计算机程序设计基础A/B 个人辅导用课件
 
 ## Contents 目录
 
-仍在撰写过程中……请拭目以待~
+### 正文
+
+- Preface - [写在前面的话](./Preface/写在前面的话.md)
+- Lesson 00 - [何为编程及资源地址](./Lesson00/Lesson00.md)
+- Lesson 01 - [Java初期准备](./Lesson01/Lesson01.md)
+- Lesson 02 - [第一个Java程序](./Lesson02/Lesson02.md)
+- Lesson 03 - [八种基本数据类型和标识符](./Lesson03/Lesson03.md)
+- Lesson 04 - [输入和输出](./Lesson04/Lesson04.md)
+- Lesson 05 - [操作符及其优先级、类型转换](./Lesson05/Lesson05.md)
+- Lesson 06 - [判断](./Lesson06/Lesson06.md)
+- Lesson 07 - [循环、变量的作用域](./Lesson07/Lesson07.md)
+- Lesson 08 - [数组和引用变量](./Lesson08/Lesson08.md)
+- Lesson 09 - [静态方法](./Lesson09/Lesson09.md)
+- Lesson 10 - [类和对象初印象](./Lesson10/Lesson10.md)
+- To be continue...
+
+
+
+### 其他文档
+
+- [Online Judge从入门到精通](./AboutOnlineJudge/Online%20Judge从入门到精通.md) - 如何优雅地使用OJ
+- [How to Setup JUnit in IDEA](./AboutJUnitSetup/How%20to%20Setup%20JUnit%20in%20IDEA.md) - 以2021年秋季学期第五次作业为例
+- [Debug tips](./DebugTips) - 感谢[@lethal233](https://github.com/lethal233)的贡献
+- [Quiz](./Quiz) - 我自己出的一些题和考试题的融合
 
 
 
