@@ -1,6 +1,6 @@
 # Java-Courseware :books:
-SUSTech 计算机程序设计基础A/B 个人辅导用课件
-
+- 基于SUSTech CS102A/B 计算机程序设计基础A/B (Introduction to Programming A/B)
+- 个人辅导用课件
 
 
 ## Introduction 简介
