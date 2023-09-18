@@ -67,6 +67,23 @@ This work is licensed under a
 
 谢谢为这个项目做出贡献的同学们：
 <!-- readme: contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/Tloops">
+            <img src="https://avatars.githubusercontent.com/u/51078038?v=4" width="100;" alt="Tloops"/>
+            <br />
+            <sub><b>Qiushi Nie</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/lethal233">
+            <img src="https://avatars.githubusercontent.com/u/47763046?v=4" width="100;" alt="lethal233"/>
+            <br />
+            <sub><b>Shilong Li</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: contributors -end -->
 
 最后感谢曾经听过我的课的同学们，以及我的计算机启蒙老师们，他们的名字我在这里就不做赘述。另外课件中可能会有一些错误或是不严谨的点，欢迎同学和老师指正批评。
