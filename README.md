@@ -65,6 +65,10 @@ This work is licensed under a
 
 ## Special Thanks 特别鸣谢
 
+谢谢为这个项目做出贡献的同学们：
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
+
 最后感谢曾经听过我的课的同学们，以及我的计算机启蒙老师们，他们的名字我在这里就不做赘述。另外课件中可能会有一些错误或是不严谨的点，欢迎同学和老师指正批评。
 
 
